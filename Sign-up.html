@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ *
+ {
+  box-sizing: border-box;
+}
+
+div.main{
+  width: 400px;
+  margin: 100px auto 0px auto;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8PDw8PDw0PDw8PDw8PDQ8PDQ8PFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQYC/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDTgqkoAAAAAAACiACoAoIAKACAAKCAAAAAAC4AgAAAAAAEAAAVFBAAVBQQUBBQEAAAAAAABRAAAAAAAAAFQAVFQBUUASKAIoAAIKgAAAAAAGgAAAAAAAAAAAKgCiAKAAAAgAAAAAAAAAAAAAAAAAAAAoICgiooAigAAgAAKCAoIAAAAAAAACggqAAACoCiKCKAAAAAIKgAAAAAqAAoIAAogCgCAAAAAAKgAKAigAACKgAAAAAACgAYACKAAgAKAIqAqKAGCAqKgAAAAAACgAACKACKgAAKACCoAoAAAAAAAgKCAAAAAoAigAAAAgoCaKAgKAioAoAAAAACAKgAAAAAAAKIAoAiooIogAuAIAAACgAiooAFAEAAAAAAAAACCgIKCAAAoAYAioAoAAAAAAigiooAIAqAAKCAAAoCCgioAoAIKAgACoAqCggqAoAIKAIqAAAAAqAABAVAAABRAFABAAAABUoCoACgIKAIoCAAAAAAAAAAAAAACgIoAgAAAKgAqgDlQAqAAAAUAVAAUAQoAqUAAAUAH//Z");
+  min-height: 900px;
+
+  /* Center and scale the image nicely */
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: center;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=tel], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=tel]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=date], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=date]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <div class="bg-img"> 
+   <div class="main">    
+     <br>
+   <div class="row">
+     <div class="col-75">
+       <div class="container">
+       <form action="" method="post" >
+         <center><h1>Sign Up</h1></center>
+           <div class="row">
+             <div class="col-50">
+               <label for="name"> Name</label>
+               <input type="text" id="name" name="name" placeholder="Enter your name">
+               <label for="name"> Father Name</label>
+               <input type="text" id="father" name="father" placeholder="Enter your father name">
+               <label for="name"> Phone</label>
+               <input type="tel" id="phone" maxlenghth="10" name="phone" placeholder="Enter your phone number" onkeypress="return onlyNumberKey(event)">
+               <label for="email"></i> Email</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email">
+   
+               <div class="row">
+                 <div class="col-50">
+                   <label for="state"> DOB</label>
+                   <input type="date" id="dob" name="dob" >
+                 </div>
+                 <div class="col-50">
+                   <label for="gender"> Gender</label><br><br>
+                  <div>
+                  <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male"/>Male</label >
+                  <label for="female" class="radio-inline" ><input type="radio" name="gender" value="f" id="female"/>Female</label>
+                  <label for="others" class="radio-inline" ><input type="radio" name="gender" value="o" id="others" />Others</label >
+                  </div>
+                 </div>
+                 <div class="col-50">
+                  <label for="img"><br> Image</label><br><br>
+                  <input type="file" id="image" name="image" >   
+                 </div>
+                 <div class="col-50"><br>
+                  <label for="msg"> Message</label><br><br>
+                  <textarea id="text" name="message" placeholder="type here" style="height:200px"></textarea> 
+                 </div>
+               </div>
+             </div>
+           </div>
+           <input type="submit" value="Submit" class="btn">
+         </form>
+       </div>
+     </div>
+     </div>
+   </div>
+ 
+     
+     
+ </table>
+ </form>
+ </body>
+</html>
